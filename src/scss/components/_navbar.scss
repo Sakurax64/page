@@ -1,0 +1,96 @@
+// 
+// Navbar
+// 
+
+#mainNav {
+    min-height: 3.5rem;
+    background-color: $gray-900;
+
+    .navbar-toggler {
+        font-size: 80%;
+        padding: 0.75rem;
+        color: $secondary;
+        border: $border-width solid $secondary;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .navbar-brand {
+        color: $white;
+        font-weight: 700;
+        padding: 0.9rem 0;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            &:hover {
+                color: fade($white, 80%);
+                outline: none;
+                background-color: transparent;
+            }
+
+            &:active,
+            &:focus {
+                outline: none;
+                background-color: transparent;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        background-color: transparent;
+        transition: background-color 0.3s ease-in-out;
+
+        .navbar-brand {
+            padding: 0.5rem 0;
+            color: fade-out($white, 0.5);
+        }
+
+        .nav-link {
+            transition: none;
+            padding: 2rem 1.5rem;
+            color: fade-out($white, 0.5);
+
+            &:hover {
+                color: fade-out($white, 0.25);
+            }
+
+            &:active {
+                color: $gray-900;
+            }
+        }
+
+        &.navbar-shrink {
+            background-color: $gray-900;
+
+            .navbar-brand {
+                color: $white;
+            }
+
+            .nav-link {
+                color: $white;
+                padding: 1.5rem 1.5rem 1.25rem;
+                border-bottom: 0.25rem solid transparent;
+
+                &:hover {
+                    color: $secondary;
+                }
+
+                &:active {
+                    color: darken($secondary, 15%);
+                }
+
+                &.active {
+                    color: $secondary;
+                    outline: none;
+                    border-bottom: 0.25rem solid $secondary;
+                }
+            }
+        }
+    }
+}
