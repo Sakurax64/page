@@ -544,8 +544,20 @@ class Character {
     };
 };
 
+function generateStats() {
+    const highStat = random(stats);
+
+    const statsFiltered = stats.filter(item => item !== highStat);
+
+    const lowStat = random(statsFiltered);
+
+    return [highStat, lowStat];
+}
+
 function generateChar(eyesOption, hairOption, raceOption) {
-    const char = new Character(random(age), random(motivation), random(charClass), random(archetype), random(stats), random(stats), random(race[raceOption]), random(alignment), random(starsign), random(hairFeature), random(hairColor[hairOption]), random(hairType), random(hairLength), random(eyeColor[eyesOption]), random(visualFeature), random(details), `${random(myersBriggs[0])}${random(myersBriggs[1])}${random(myersBriggs[2])}${random(myersBriggs[3])}`, `${random(proficiency[0])}, ${random(proficiency[1])}`, random(profession), `${random(traits[0])}, ${random(traits[1])}, ${random(traits[2])}, ${random(traits[3])}`);
+    const statsND = generateStats();
+
+    const char = new Character(random(age), random(motivation), random(charClass), random(archetype), statsND[0], statsND[1], random(race[raceOption]), random(alignment), random(starsign), random(hairFeature), random(hairColor[hairOption]), random(hairType), random(hairLength), random(eyeColor[eyesOption]), random(visualFeature), random(details), `${random(myersBriggs[0])}${random(myersBriggs[1])}${random(myersBriggs[2])}${random(myersBriggs[3])}`, `${random(proficiency[0])}, ${random(proficiency[1])}`, random(profession), `${random(traits[0])}, ${random(traits[1])}, ${random(traits[2])}, ${random(traits[3])}`);
 
     const insert = document.getElementById("insert");
 
