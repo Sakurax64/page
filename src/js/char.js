@@ -555,45 +555,45 @@ function generateChar(eyesOption, hairOption, raceOption) {
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-10">
                 <p class="text-white-50">
-                    Age:  ${char.age}
+                    Age: <b>${char.age}</b>
                     <br />
-                    Motivation:  ${char.motivation}
+                    Motivation: <b>${char.motivation}</b>
                     <br />
-                    Class:  ${char.charClass}
+                    Class: <b>${char.charClass}</b>
                     <br />
-                    Archetype:  ${char.archetype}
+                    Archetype: <b>${char.archetype}</b>
                     <br />
-                    Highest Stat:  ${char.highStat}
+                    Highest Stat: <b>${char.highStat}</b>
                     <br />
-                    Lowest Stat:  ${char.lowStat}
+                    Lowest Stat: <b>${char.lowStat}</b>
                     <br />
-                    Race:  ${char.race}
+                    Race: <b>${char.race}</b>
                     <br />
-                    Alignment:  ${char.alignment}
+                    Alignment: <b>${char.alignment}</b>
                     <br />
-                    Star Sign:  ${char.starsign}
+                    Star Sign: <b>${char.starsign}</b>
                     <br />
-                    Hair Feature:  ${char.hairFeature}
+                    Hair Feature: <b>${char.hairFeature}</b>
                     <br />
-                    Hair Color:  ${char.hairColor}
+                    Hair Color: <b>${char.hairColor}</b>
                     <br />
-                    Hair Type:  ${char.hairType}
+                    Hair Type: <b>${char.hairType}</b>
                     <br />
-                    Hair Length:  ${char.hairLength}
+                    Hair Length: <b>${char.hairLength}</b>
                     <br />
-                    Eye Color:  ${char.eyeColor}
+                    Eye Color: <b>${char.eyeColor}</b>
                     <br />
-                    Visual Feature:  ${char.visualFeature}
+                    Visual Feature: <b>${char.visualFeature}</b>
                     <br />
-                    Additional Details:  ${char.details}
+                    Additional Details: <b>${char.details}</b>
                     <br />
-                    Proficiency:  ${char.proficiency}
+                    Proficiency: <b>${char.proficiency}</b>
                     <br />
-                    Profession:  ${char.profession}
+                    Profession: <b>${char.profession}</b>
                     <br />
-                    Traits:  ${char.traits}
+                    Traits: <b>${char.traits}</b>
                     <br />
-                    Myers Briggs:  ${char.myersBriggs}
+                    Myers Briggs: <b>${char.myersBriggs}</b>
                     </p>
             </div>
         </div>
