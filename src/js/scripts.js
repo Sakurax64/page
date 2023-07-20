@@ -66,11 +66,12 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
     const timer = document.getElementById("timer");
+    const doses = document.getElementById("doses");
 
     setInterval(() => {
         timer.innerText = `${duration().d}d ${duration().h}h ${duration().m}m ${duration().s}s`;
+        doses.innerText = `${duration().d / 7} doses total`;
 
-        
 
     }, 1000);
 
